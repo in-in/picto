@@ -1,8 +1,14 @@
+include blocks/variables.pug
+include blocks/body.pug
+
 mjml
   include blocks/head.pug
-  mj-body
-    mj-container
+  +body()
+    mj-wrapper(background-color=headerBg, full-width)
+      mj-section
+        mj-column
+          mj-text On Air1
 
-      mj-hero
-        mj-hero-content
-          mj-text On Air
+    mj-hero
+      mj-hero-content
+        mj-text On Air

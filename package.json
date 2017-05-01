@@ -1,7 +1,6 @@
 {
-  "name": "careex",
+  "name": "picto",
   "version": "1.0.0",
-  "description": "Project template for email based on mjml",
   "babel": {
     "presets": [
       "latest"

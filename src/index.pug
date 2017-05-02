@@ -1,12 +1,15 @@
 include blocks/variables.pug
 include blocks/body.pug
 include blocks/hero.pug
+include blocks/section.pug
+include blocks/subtitle.pug
+include blocks/text.pug
 
 mjml
   include blocks/head.pug
   +body()
     mj-wrapper(background-color=headerBg, padding='0', full-width)
-      mj-section(background-color=darkBg, padding='23px 27px')
+      mj-section(background-color=darkColor, padding='23px 27px')
         mj-column(width='40%')
           mj-text(
             color='#fff'
@@ -27,3 +30,30 @@ mjml
             span(style='font-size: inherit; color: #b3b3b3;') Having Trouble Viewing it? &nbsp;
             a(href='#x', style='font-size: inherit; color: #fff') View Online.
     +hero()
+    +section()
+      mj-column(width='100%')
+        +subtitle('Main Blog Post Heading')
+      mj-column(width='100%')
+        +text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi.')
+    +section()
+      mj-column(width='100%')
+        +subtitle('Features')
+    +section()
+      mj-column(width='50%')
+        +subtitle('Title Goes Here')
+    +section().section--image
+      mj-column(width='50%')
+        mj-image(
+          padding='0'
+          src=`${imagePath}section2.jpg`)
+      mj-column(width='50%')
+        +subtitle('Title Goes Here2')
+    +section()
+      mj-column(width='100%')
+        +subtitle('Our Work')
+    +section()
+      mj-column(width='100%')
+        +subtitle('Title Goes Here3')
+    +section()
+      mj-column(width='100%')
+        +subtitle('Check this Out!')

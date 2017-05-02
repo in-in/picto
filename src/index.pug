@@ -1,5 +1,6 @@
 include blocks/variables.pug
 include blocks/body.pug
+include blocks/hero.pug
 
 mjml
   include blocks/head.pug
@@ -25,6 +26,4 @@ mjml
             padding='0')
             span(style='font-size: inherit; color: #b3b3b3;') Having Trouble Viewing it? &nbsp;
             a(href='#x', style='font-size: inherit; color: #fff') View Online.
-    mj-hero
-      mj-hero-content
-        mj-text(font-family='Roboto, sans-serif') On Air
+    +hero()

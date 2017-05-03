@@ -1,6 +1,5 @@
 include blocks/variables.pug
 include blocks/body.pug
-include blocks/hero.pug
 include blocks/section.pug
 include blocks/subtitle.pug
 include blocks/text.pug
@@ -29,7 +28,11 @@ mjml
             padding='0')
             span(style='font-size: inherit; color: #b3b3b3;') Having Trouble Viewing it? &nbsp;
             a(href='#x', style='font-size: inherit; color: #fff') View Online.
-    +hero()
+    mj-section(
+      padding='0')
+      mj-image(
+        padding='0'
+        src=`${imagePath}hero.jpg`)
     +section()
       mj-column(width='100%')
         +subtitle('Main Blog Post Heading')

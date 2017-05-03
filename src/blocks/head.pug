@@ -1,15 +1,25 @@
 mj-head
   mj-title Picto
+
   mj-font(
     name='Open Sans'
     href='https://fonts.googleapis.com/css?family=Open+Sans:600,700')/
+
   mj-font(
     name='Roboto'
     href='https://fonts.googleapis.com/css?family=Roboto:400,500')/
-  mj-style(inline='inline') 
-    | a { text-decoration: none; color: inherit; }
-    | p { margin: 0; color: inherit;}
-    | .section { background-color: red; }
+
+  mj-style(inline='inline').
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    p {
+      margin: 0;
+      color: inherit;
+    }
+
   mj-attributes
     mj-class(
       name='section'
@@ -20,5 +30,19 @@ mj-head
       name='section--image'
       padding='0'
       padding-right='0'
-      padding-left='0'
-      background-color='tan')/
+      padding-left='0')/
+    mj-class(
+      name='image-half-section'
+      width='270px'
+      padding='0')/
+    mj-class(
+      name='subtitle'
+      padding='0'
+      padding-bottom='15px'
+      color=darkColor
+      font-weight='600'
+      font-family='Open Sans, sans-serif'
+      font-size='18px')/
+    mj-class(
+      name='subtitle--image-section'
+      padding-top='36px')/

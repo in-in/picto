@@ -38,16 +38,24 @@ mjml
     +section()
       mj-column(width='100%')
         +subtitle('Features')
-    +section()
-      mj-column(width='50%')
-        +subtitle('Title Goes Here')
-    +section().section--image
-      mj-column(width='50%')
+    +section().section--image&attributes({'padding-left': '30px'})
+      mj-column(width='40%')
+        +subtitle('Hitle Goes Here').subtitle--image-section
+        +text('Lorem ipsum dolor sit amet it sole consectetur adipiscing elit. Duis quis lectus at arcu egestas fringa fermentum eget.')
+      mj-column(width='60%')
         mj-image(
-          padding='0'
+          mj-class='image-half-section'
+          align='right'
+          src=`${imagePath}section1.jpg`)
+    +section().section--image&attributes({'padding-right': '30px'})
+      mj-column(width='60%')
+        mj-image(
+          mj-class='image-half-section'
+          align='left'
           src=`${imagePath}section2.jpg`)
-      mj-column(width='50%')
-        +subtitle('Title Goes Here2')
+      mj-column(width='40%')
+        +subtitle('Title Goes Here2').subtitle--image-section
+        +text('Lorem ipsum dolor sit amet it sole consectetur adipiscing elit. Duis quis lectus at arcu egestas fringa fermentum eget.')
     +section()
       mj-column(width='100%')
         +subtitle('Our Work')

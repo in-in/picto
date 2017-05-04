@@ -14,10 +14,28 @@ mj-head
       text-decoration: none;
       color: inherit;
     }
-    
+
     p {
       margin: 0;
       color: inherit;
+    }
+
+    .subtitle--image-section,
+    .text--image-section {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    .subtitle--image-section {
+      padding-top: 36px;
+    }
+
+    .text--image-section {
+      padding-bottom: 30px;
+    }
+
+    .image-half-section {
+      border: 1px solid red;
     }
     
   mj-style.
@@ -28,7 +46,22 @@ mj-head
 
       .header-link {
         text-align: right !important;
-        color: red !important;
+      }
+
+      .text--image-section-left {
+        padding-right: 0 !important;
+      }
+
+      .text--image-section-right {
+        padding-left: 0 !important;
+      }
+
+      .subtitle--image-section-left {
+        padding-right: 0 !important;
+      }
+
+      .subtitle--image-section-right {
+        padding-left: 0 !important;
       }
     }
 
@@ -55,6 +88,3 @@ mj-head
       font-weight='600'
       font-family='Open Sans, sans-serif'
       font-size='18px')/
-    mj-class(
-      name='subtitle--image-section'
-      padding-top='36px')/

@@ -1,0 +1,12 @@
+mixin feature(list)
+  each item in list
+    mj-column
+      mj-image(
+        width='50px'
+        height='50px'
+        padding-top='28px'
+        padding-bottom='20px'
+        title=item.title
+        src=imagePath + item.img)
+      +subtitle(item.title)&attributes({'align': 'center'})
+      +text(item.text)&attributes({'align': 'center'}).text--feature

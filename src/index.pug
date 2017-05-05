@@ -42,21 +42,27 @@ mjml
       mj-column(width='100%')
         +subtitle('Features')
     +section().section--image
-      mj-column(width='40%')
-        +subtitle('Hitle Goes Here').subtitle--image-section.subtitle--image-section-left
+      mj-column(
+        vertical-align='middle'
+        width='55%')
+        +subtitle('Hitle Goes Here Hitle Goes Here Hitle Goes Here').subtitle--image-section.subtitle--image-section-left
         +text('Lorem ipsum dolor sit amet it sole consectetur adipiscing elit. Duis quis lectus at arcu egestas fringa fermentum eget.').text--image-section.text--image-section-left
-      mj-column(width='60%')
+      mj-column(
+        vertical-align='middle'
+        width='45%')
         mj-image(
           mj-class='image-half-section'
-          align='right'
           src=`${imagePath}section1.jpg`)
     +section().section--image
-      mj-column(width='60%')
+      mj-column(
+        vertical-align='middle'
+        width='45%')
         mj-image(
           mj-class='image-half-section'
-          align='left'
           src=`${imagePath}section2.jpg`)
-      mj-column(width='40%')
+      mj-column(
+        vertical-align='middle'
+        width='55%')
         +subtitle('Title Goes Here2').subtitle--image-section.subtitle--image-section-right
         +text('Lorem ipsum dolor sit amet it sole consectetur adipiscing elit. Duis quis lectus at arcu egestas fringa fermentum eget.').text--image-section.text--image-section-right
     +section()

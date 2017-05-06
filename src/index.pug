@@ -13,13 +13,7 @@ mjml
     mj-wrapper(background-color=headerBg, padding='0', full-width)
       mj-section(background-color=darkColor, padding='23px 27px')
         mj-column(width='40%')
-          mj-text(
-            color='#fff'
-            font-family='Open Sans, sans-serif'
-            font-size='42px'
-            font-weight='700'
-            text-transform='uppercase'
-            padding-left='0')
+          mj-text(mj-class='title-logo')
             h1.logo(style='font-size: inherit; margin-top: 0; margin-bottom: 10px;') Picto
         mj-column(
           width='60%'
@@ -43,17 +37,7 @@ mjml
       mj-column(width='100%')
         +text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi.')
       mj-column(width='100%')
-        mj-button(
-          border-radius='18px'
-          background-color=darkColor
-          font-size='14px'
-          font-weight='700'
-          font-family='Open Sans, sans-serif'
-          align='left'
-          padding-top='25px'
-          padding-left='0'
-          href='#x'
-          inner-padding='11px 27px')
+        mj-button(mj-class='button', href='#x')
           | Details
     +spacer()
     +section('marginless')

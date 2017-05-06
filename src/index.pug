@@ -4,6 +4,7 @@ include blocks/section.pug
 include blocks/subtitle.pug
 include blocks/text.pug
 include blocks/feature.pug
+include blocks/work.pug
 
 mjml
   include blocks/head.pug
@@ -94,9 +95,24 @@ mjml
         width='55%')
         +subtitle('Title Goes Here2').subtitle--image-section.subtitle--image-section-right
         +text('Lorem ipsum dolor sit amet it sole consectetur adipiscing elit. Duis quis lectus at arcu egestas fringa fermentum eget.').text--image-section.text--image-section-right
-    +section()
-      mj-column(width='100%')
+    +section('spacerFree')
+      mj-column
         +subtitle('Our Work')
+    +section('spacerFree').section--marginless
+      mj-column(width='100%')
+        mj-group
+          +work([
+            {image: 'work1.jpg'},
+            {image: 'work2.jpg'},
+            {image: 'work3.jpg'},
+          ])
+      mj-column(width='100%')
+        mj-group
+          +work([
+          {image: 'work4.jpg'},
+            {image: 'work5.jpg'},
+            {image: 'work6.jpg'},
+          ])
     +section()
       mj-column(width='100%')
         +subtitle('Title Goes Here3')

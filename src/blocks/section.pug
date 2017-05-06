@@ -1,6 +1,3 @@
-mixin section(type)
-  mj-section(mj-class=`section ${attributes.class}`)&attributes(attributes)
+mixin section(marginless)
+  mj-section(mj-class=marginless ? 'section section--marginless' : 'section')
     block
-  if (type !== 'spacerFree')
-    mj-spacer(
-      height='15')

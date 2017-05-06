@@ -5,6 +5,7 @@ include blocks/subtitle.pug
 include blocks/text.pug
 include blocks/feature.pug
 include blocks/work.pug
+include blocks/spacer.pug
 
 mjml
   include blocks/head.pug
@@ -32,9 +33,10 @@ mjml
               a(href='#x', style='font-size: inherit; color: #fff') View Online.
     mj-section(
       padding='0')
-      mj-image(
-        padding='0'
-        src=`${imagePath}hero.jpg`)
+      mj-column
+        mj-image(
+          padding='0'
+          src=`${imagePath}hero.jpg`)
     +section()
       mj-column(width='100%')
         +subtitle('Main Blog Post Heading')
@@ -53,7 +55,8 @@ mjml
           href='#x'
           inner-padding='11px 27px')
           | Details
-    +section().section--marginless
+    +spacer()
+    +section('marginless')
       +feature([
         {
           title: 'Editable',
@@ -71,7 +74,8 @@ mjml
           text: 'Lorem ipsum dolor sit amet adipisce.'
         }
       ])
-    +section().section--marginless
+    +spacer()
+    +section('marginless')
       mj-column(
         vertical-align='middle'
         width='55%')
@@ -83,7 +87,8 @@ mjml
         mj-image(
           mj-class='image-half-section'
           src=`${imagePath}section1.jpg`)
-    +section().section--marginless
+    +spacer()
+    +section('marginless')
       mj-column(
         vertical-align='middle'
         width='45%')
@@ -95,27 +100,30 @@ mjml
         width='55%')
         +subtitle('Title Goes Here2').subtitle--image-section.subtitle--image-section-right
         +text('Lorem ipsum dolor sit amet it sole consectetur adipiscing elit. Duis quis lectus at arcu egestas fringa fermentum eget.').text--image-section.text--image-section-right
-    +section('spacerFree')
+    +spacer()
+    +section()
       mj-column
         +subtitle('Our Work')
-    +section('spacerFree').section--marginless
-      mj-column(width='100%')
-        mj-group
-          +work([
-            {image: 'work1.jpg'},
-            {image: 'work2.jpg'},
-            {image: 'work3.jpg'},
-          ])
-      mj-column(width='100%')
-        mj-group
-          +work([
+    +section('marginless')
+      mj-group
+        +work([
+          {image: 'work1.jpg'},
+          {image: 'work2.jpg'},
+          {image: 'work3.jpg'},
+        ])
+    +section('marginless')
+      mj-group
+        +work([
           {image: 'work4.jpg'},
-            {image: 'work5.jpg'},
-            {image: 'work6.jpg'},
-          ])
+          {image: 'work5.jpg'},
+          {image: 'work6.jpg'},
+        ])
+    +spacer()
     +section()
       mj-column(width='100%')
         +subtitle('Title Goes Here3')
+    +spacer()
     +section()
       mj-column(width='100%')
         +subtitle('Check this Out!')
+    +spacer()

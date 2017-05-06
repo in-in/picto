@@ -25,8 +25,7 @@ mjml
             .header-link
               span(style='font-size: inherit; color: #b3b3b3;') Having Trouble Viewing it? &nbsp;
               a(href='#x', style='font-size: inherit; color: #fff') View Online.
-    mj-section(
-      padding='0')
+    +section('marginless')
       mj-column
         mj-image(
           padding='0'
@@ -87,7 +86,8 @@ mjml
     +spacer()
     +section()
       mj-column
-        +subtitle('Our Work')
+        +subtitle('Our Work', 'center')
+        +text('Lorem ipsum dolor sit amet it sole consectetur adipiscing elit.', 'center')
     +section('marginless')
       mj-group
         +work([
@@ -103,11 +103,15 @@ mjml
           {image: 'work6.jpg'},
         ])
     +spacer()
-    +section()
-      mj-column(width='100%')
-        +subtitle('Title Goes Here3')
+    mj-section(
+      padding-top='29px'
+      padding-bottom='17px'
+      background-color=darkColor)
+      mj-column
+        +subtitle('Ad Space', 'center', '#fff')
+        +subtitle('600 x 120 px', 'center', '#fff')
     +spacer()
     +section()
-      mj-column(width='100%')
+      mj-column
         +subtitle('Check this Out!')
     +spacer()

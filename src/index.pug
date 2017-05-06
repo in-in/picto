@@ -6,6 +6,7 @@ include blocks/text.pug
 include blocks/feature.pug
 include blocks/work.pug
 include blocks/spacer.pug
+include blocks/chart.pug
 
 mjml
   include blocks/head.pug
@@ -113,5 +114,14 @@ mjml
     +spacer()
     +section()
       mj-column
-        +subtitle('Check this Out!')
+        +subtitle('Title Goes Here')
+        +text('Lorem ipsum dolor sit amet, alia nulla simul has ne, sit nusquam placerat ne. In mei delicata aliquando, purto vocent nusquam no vis, ne nec tincidunt disputando. Pro feugiat quaerendum in.')
+    +spacer()
+    +section()
+      mj-column
+        +subtitle('Check this Out!', 'center')
+        +text('Lorem ipsum dolor sit amet it sole consectetur adipiscing elit.', 'center')
+    +section()
+      mj-column
+        +chart()
     +spacer()

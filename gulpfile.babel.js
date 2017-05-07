@@ -11,7 +11,7 @@ const paths = {
   dist: 'dist/',
   src: 'src/',
   images: {
-    get src () { return `${paths.src}assets/images/*.*`; },
+    get src () { return `${paths.src}assets/images/**/*.*`; },
     get dist () { return `${paths.dist}assets/images/`; }
   }
 };
